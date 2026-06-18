@@ -1,18 +1,19 @@
-# UC13: Performance Comparison (Loops vs Streams)
+# UC14: Handle Invalid Bogie Capacity (Custom Exception)
 
-**Purpose:** Compare performance of loop-based logic versus stream-based logic using time measurement with `System.nanoTime()`.
+**Purpose:** Prevent invalid passenger bogies from being added to the train by enforcing capacity rules using a custom exception.
 
 **Input:**
-- Generate a large dataset of Bogies.
+- Valid Bogie: "Sleeper" (72)
+- Invalid Bogie: "AC Chair" (-10)
 
 **Output:**
 ```
 ============================================================================
- UC13 - Performance Comparison (Loops vs Streams) 
+ UC14 - Handle Invalid Bogie Capacity 
 ============================================================================
 
-Loop Execution Time (ns): 13654400
-Stream Execution Time (ns): 20251700
+Created Bogie: Sleeper -> 72
+Error: Capacity must be greater than zero
 
-UC13 performance benchmarking completed...
+UC14 exception handling completed...
 ```
