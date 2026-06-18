@@ -1,23 +1,23 @@
-# UC10: Count Total Seats in Train (reduce)
+# UC11: Validate Train ID & Cargo Codes (Regex)
 
-**Purpose:** Aggregate seating capacities into a single total value using Stream reduction.
+**Purpose:** Validate Train ID and Cargo Code formats using Regular Expressions.
 
 **Input:**
-- Add bogies: "Sleeper" (72), "AC Chair" (56), "First Class" (24), "Sleeper" (70)
+- Train ID: TRN-6524
+- Cargo Code: PET-FH
 
 **Output:**
 ```
 ============================================================================
- UC10 - Count Total Seats in Train
+ UC11 - Validate Train ID and Cargo Code 
 ============================================================================
 
-Bogies in Train:
-Sleeper -> 72
-AC Chair -> 56
-First Class -> 24
-Sleeper -> 70
+Enter Train ID (Format: TRN-1234): TRN-6524
+Enter Cargo Code (Format: PET-AB): PET-FH
 
-Total Seating Capacity of Train: 222
+Validation Results:
+Train ID Valid: true
+Cargo Code Valid: true
 
-UC10 aggregation completed...
+UC11 validation completed...
 ```
