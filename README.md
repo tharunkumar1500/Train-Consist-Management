@@ -1,29 +1,18 @@
-# UC12: Safety Compliance Check for Goods Bogies (allMatch)
+# UC13: Performance Comparison (Loops vs Streams)
 
-**Purpose:** Encapsulate bogie rules using functional interfaces and apply them using lambda expressions with allMatch().
+**Purpose:** Compare performance of loop-based logic versus stream-based logic using time measurement with `System.nanoTime()`.
 
 **Input:**
-- Add Goods Bogies: 
-  - Cylindrical -> Petroleum
-  - Open -> Coal
-  - Box -> Grain
-  - Cylindrical -> Coal
-- Safety Rule: Cylindrical bogies must only carry Petroleum.
+- Generate a large dataset of Bogies.
 
 **Output:**
 ```
 ============================================================================
- UC12 - Safety Compliance Check for Goods Bogies 
+ UC13 - Performance Comparison (Loops vs Streams) 
 ============================================================================
 
-Goods Bogies in Train:
-Cylindrical -> Petroleum
-Open -> Coal
-Box -> Grain
-Cylindrical -> Coal
+Loop Execution Time (ns): 13654400
+Stream Execution Time (ns): 20251700
 
-Safety Compliance Status: false
-Train formation is NOT SAFE.
-
-UC12 safety validation completed...
+UC13 performance benchmarking completed...
 ```
