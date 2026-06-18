@@ -1,21 +1,26 @@
-# UC17: Sort Bogie Names Using Arrays.sort()
+# UC18: Linear Search for Bogie ID (Array-Based Searching)
 
-**Purpose:** Sort bogie type names alphabetically using Java’s built-in Arrays.sort() method.
+**Purpose:** Search and identify a specific bogie ID from an unsorted list using Linear Search algorithm.
 
 **Input:**
-- Original Bogie Names: `{"Sleeper", "AC Chair", "First Class", "General", "Luxury"}`
+- Bogie IDs: `{"BG101", "BG205", "BG309", "BG412", "BG550"}`
+- Search Key: `"BG309"`
 
 **Output:**
 ```
 ============================================================================
- UC17 - Sort Bogie Names Using Arrays.sort()
+ UC18 - Linear Search for Bogie ID 
 ============================================================================
 
-Original Bogie Names:
-[Sleeper, AC Chair, First Class, General, Luxury]
+Available Bogie IDs:
+BG101
+BG205
+BG309
+BG412
+BG550
 
-Sorted Bogie Names (Alphabetical):
-[AC Chair, First Class, General, Luxury, Sleeper]
 
-UC17 sorting completed...
+Bogie BG309 found in train consist.
+
+UC18 search completed...
 ```
