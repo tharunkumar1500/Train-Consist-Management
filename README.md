@@ -1,21 +1,26 @@
-# UC3: Track Unique Bogie IDs (Set – HashSet)
+# UC4: Maintain Ordered Bogie Consist (LinkedList Operations)
 
-**Purpose:** Ensure no duplicate bogie IDs are added to the train using HashSet.
+**Purpose:** Model physical chaining of train bogies using LinkedList for ordered operations.
 
 **Input:**
-- Add bogie IDs: "BG101", "BG102", "BG103", "BG104", and duplicates "BG101", "BG102"
+- Initial consist: "Engine", "Sleeper", "AC", "Cargo", "Guard"
+- Insert "Pantry Car" at index 2
+- Remove first and last bogie
 
 **Output:**
 ```
-============================
- UC3 - Track Unique Bogie IDs
-============================
+======================================
+ UC4 - Maintain Ordered Bogie Consist
+======================================
 
-Bogie IDs After Insertion:
-[BG104, BG103, BG102, BG101]
+Initial Train Consist:
+[Engine, Sleeper, AC, Cargo, Guard]
 
-Note:
-Duplicates are automatically ignored by HashSet.
+After Inserting 'Pantry Car' at position 2:
+[Engine, Sleeper, Pantry Car, AC, Cargo, Guard]
 
-UC3 uniqueness validation completed...
+After Removing First and Last Bogie:
+[Sleeper, Pantry Car, AC, Cargo]
+
+UC4 ordered consist operations completed...
 ```
