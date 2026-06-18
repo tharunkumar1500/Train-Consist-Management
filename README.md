@@ -1,26 +1,36 @@
-# UC8: Filter Passenger Bogies Using Streams
+# UC9: Group Bogies by Type (Collectors.groupingBy)
 
-**Purpose:** Filter passenger bogies using Stream pipelines based on seating capacity.
+**Purpose:** Group bogies into categories using Stream collectors.
 
 **Input:**
-- Add bogies: "Sleeper" (72), "AC Chair" (56), "First Class" (24), "General" (90)
-- Filter condition: capacity > 60
+- Add bogies: "Sleeper" (72), "AC Chair" (56), "First Class" (24), "Sleeper" (70), "AC Chair" (60)
+- Group by bogie name
 
 **Output:**
 ```
 ============================================================================
- UC8 - Filter Passenger Bogies Using Streams
+ UC9 - Group Bogies by Type 
 ============================================================================
 
 All Bogies:
 Sleeper -> 72
 AC Chair -> 56
 First Class -> 24
-General -> 90
+Sleeper -> 70
+AC Chair -> 60
 
-Filtered Bogies (Capacity > 60):
-Sleeper -> 72
-General -> 90
+Grouped Bogies:
 
-UC8 filtering completed...
+Bogie Type: First Class
+  Capacity -> 24
+
+Bogie Type: Sleeper
+  Capacity -> 72
+  Capacity -> 70
+
+Bogie Type: AC Chair
+  Capacity -> 56
+  Capacity -> 60
+
+UC9 grouping completed...
 ```
