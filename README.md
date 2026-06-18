@@ -1,23 +1,29 @@
-# UC11: Validate Train ID & Cargo Codes (Regex)
+# UC12: Safety Compliance Check for Goods Bogies (allMatch)
 
-**Purpose:** Validate Train ID and Cargo Code formats using Regular Expressions.
+**Purpose:** Encapsulate bogie rules using functional interfaces and apply them using lambda expressions with allMatch().
 
 **Input:**
-- Train ID: TRN-6524
-- Cargo Code: PET-FH
+- Add Goods Bogies: 
+  - Cylindrical -> Petroleum
+  - Open -> Coal
+  - Box -> Grain
+  - Cylindrical -> Coal
+- Safety Rule: Cylindrical bogies must only carry Petroleum.
 
 **Output:**
 ```
 ============================================================================
- UC11 - Validate Train ID and Cargo Code 
+ UC12 - Safety Compliance Check for Goods Bogies 
 ============================================================================
 
-Enter Train ID (Format: TRN-1234): TRN-6524
-Enter Cargo Code (Format: PET-AB): PET-FH
+Goods Bogies in Train:
+Cylindrical -> Petroleum
+Open -> Coal
+Box -> Grain
+Cylindrical -> Coal
 
-Validation Results:
-Train ID Valid: true
-Cargo Code Valid: true
+Safety Compliance Status: false
+Train formation is NOT SAFE.
 
-UC11 validation completed...
+UC12 safety validation completed...
 ```
