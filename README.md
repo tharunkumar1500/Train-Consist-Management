@@ -1,18 +1,29 @@
-# UC1: Initialize Train and Display Consist Summary
+# UC2: Add Passenger Bogies to Train (ArrayList Operations)
 
-**Purpose:** Initialize the Train Consist Management App, create an empty ArrayList to hold bogies, and display the initial state (count = 0, consist = []).
+**Purpose:** Allow dynamic insertion, removal, and existence checking of passenger bogies using ArrayList.
 
-**Input:** (None) Runs program.
+**Input:**
+- Add bogies: "Sleeper", "AC Chair", "First Class"
+- Remove bogie: "AC Chair"
+- Check existence: "Sleeper"
 
 **Output:**
 ```
 ======================================
-   === Train Consist Management App ===
+ UC2 - Add Passenger Bogies to Train
 ======================================
 
-Train initialized successfully...
-Initial Bogie Count : 0
-Current Train Consist : []
+After Adding Bogies:
+Passenger Bogies : [Sleeper, AC Chair, First Class]
 
-System ready for operations...
+After Removing 'AC Chair':
+Passenger Bogies : [Sleeper, First Class]
+
+Checking if 'Sleeper' exists:
+Contains Sleeper? : true
+
+Final Train Passenger Consist:
+[Sleeper, First Class]
+
+UC2 operations completed successfully...
 ```
