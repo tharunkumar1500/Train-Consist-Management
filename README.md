@@ -1,36 +1,23 @@
-# UC9: Group Bogies by Type (Collectors.groupingBy)
+# UC10: Count Total Seats in Train (reduce)
 
-**Purpose:** Group bogies into categories using Stream collectors.
+**Purpose:** Aggregate seating capacities into a single total value using Stream reduction.
 
 **Input:**
-- Add bogies: "Sleeper" (72), "AC Chair" (56), "First Class" (24), "Sleeper" (70), "AC Chair" (60)
-- Group by bogie name
+- Add bogies: "Sleeper" (72), "AC Chair" (56), "First Class" (24), "Sleeper" (70)
 
 **Output:**
 ```
 ============================================================================
- UC9 - Group Bogies by Type 
+ UC10 - Count Total Seats in Train
 ============================================================================
 
-All Bogies:
+Bogies in Train:
 Sleeper -> 72
 AC Chair -> 56
 First Class -> 24
 Sleeper -> 70
-AC Chair -> 60
 
-Grouped Bogies:
+Total Seating Capacity of Train: 222
 
-Bogie Type: First Class
-  Capacity -> 24
-
-Bogie Type: Sleeper
-  Capacity -> 72
-  Capacity -> 70
-
-Bogie Type: AC Chair
-  Capacity -> 56
-  Capacity -> 60
-
-UC9 grouping completed...
+UC10 aggregation completed...
 ```
