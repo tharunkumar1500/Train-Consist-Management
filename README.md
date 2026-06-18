@@ -1,26 +1,22 @@
-# UC4: Maintain Ordered Bogie Consist (LinkedList Operations)
+# UC5: Preserve Insertion Order of Bogies (LinkedHashSet)
 
-**Purpose:** Model physical chaining of train bogies using LinkedList for ordered operations.
+**Purpose:** Maintain exact attachment order of bogies while preventing duplicate entries using LinkedHashSet.
 
 **Input:**
-- Initial consist: "Engine", "Sleeper", "AC", "Cargo", "Guard"
-- Insert "Pantry Car" at index 2
-- Remove first and last bogie
+- Attach bogies: "Engine", "Sleeper", "Cargo", "Guard"
+- Duplicate attach: "Sleeper"
 
 **Output:**
 ```
 ======================================
- UC4 - Maintain Ordered Bogie Consist
+ UC5 - Preserve Insertion Order of Bogies
 ======================================
 
-Initial Train Consist:
-[Engine, Sleeper, AC, Cargo, Guard]
+Final Train Formation:
+[Engine, Sleeper, Cargo, Guard]
 
-After Inserting 'Pantry Car' at position 2:
-[Engine, Sleeper, Pantry Car, AC, Cargo, Guard]
+Note:
+LinkedHashSet preserves insertion order and removes duplicates automatically.
 
-After Removing First and Last Bogie:
-[Sleeper, Pantry Car, AC, Cargo]
-
-UC4 ordered consist operations completed...
+UC5 formation setup completed...
 ```
