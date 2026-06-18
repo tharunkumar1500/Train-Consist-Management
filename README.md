@@ -1,22 +1,24 @@
-# UC5: Preserve Insertion Order of Bogies (LinkedHashSet)
+# UC6: Map Bogie to Capacity (HashMap)
 
-**Purpose:** Maintain exact attachment order of bogies while preventing duplicate entries using LinkedHashSet.
+**Purpose:** Associate each bogie with its seating or load capacity using HashMap.
 
 **Input:**
-- Attach bogies: "Engine", "Sleeper", "Cargo", "Guard"
-- Duplicate attach: "Sleeper"
+- "Sleeper" -> 72
+- "AC Chair" -> 56
+- "First Class" -> 24
+- "Cargo" -> 120
 
 **Output:**
 ```
 ======================================
- UC5 - Preserve Insertion Order of Bogies
+ UC6 - Map Bogie to Capacity (HashMap)
 ======================================
 
-Final Train Formation:
-[Engine, Sleeper, Cargo, Guard]
+Bogie Capacity Details:
+First Class -> 24
+Cargo -> 120
+Sleeper -> 72
+AC Chair -> 56
 
-Note:
-LinkedHashSet preserves insertion order and removes duplicates automatically.
-
-UC5 formation setup completed...
+UC6 bogie-capacity mapping completed...
 ```
