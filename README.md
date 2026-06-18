@@ -1,29 +1,21 @@
-# UC2: Add Passenger Bogies to Train (ArrayList Operations)
+# UC3: Track Unique Bogie IDs (Set – HashSet)
 
-**Purpose:** Allow dynamic insertion, removal, and existence checking of passenger bogies using ArrayList.
+**Purpose:** Ensure no duplicate bogie IDs are added to the train using HashSet.
 
 **Input:**
-- Add bogies: "Sleeper", "AC Chair", "First Class"
-- Remove bogie: "AC Chair"
-- Check existence: "Sleeper"
+- Add bogie IDs: "BG101", "BG102", "BG103", "BG104", and duplicates "BG101", "BG102"
 
 **Output:**
 ```
-======================================
- UC2 - Add Passenger Bogies to Train
-======================================
+============================
+ UC3 - Track Unique Bogie IDs
+============================
 
-After Adding Bogies:
-Passenger Bogies : [Sleeper, AC Chair, First Class]
+Bogie IDs After Insertion:
+[BG104, BG103, BG102, BG101]
 
-After Removing 'AC Chair':
-Passenger Bogies : [Sleeper, First Class]
+Note:
+Duplicates are automatically ignored by HashSet.
 
-Checking if 'Sleeper' exists:
-Contains Sleeper? : true
-
-Final Train Passenger Consist:
-[Sleeper, First Class]
-
-UC2 operations completed successfully...
+UC3 uniqueness validation completed...
 ```
