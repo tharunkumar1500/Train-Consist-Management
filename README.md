@@ -1,24 +1,27 @@
-# UC6: Map Bogie to Capacity (HashMap)
+# UC7: Sort Bogies by Capacity (Comparator)
 
-**Purpose:** Associate each bogie with its seating or load capacity using HashMap.
+**Purpose:** Sort passenger bogies based on their seating capacity using a custom Comparator.
 
 **Input:**
-- "Sleeper" -> 72
-- "AC Chair" -> 56
-- "First Class" -> 24
-- "Cargo" -> 120
+- Add bogies: "Sleeper" (72), "AC Chair" (56), "First Class" (24), "General" (90)
 
 **Output:**
 ```
-======================================
- UC6 - Map Bogie to Capacity (HashMap)
-======================================
+============================================================================
+ UC7 - Sort Bogies by Capacity (Comparator) 
+============================================================================
 
-Bogie Capacity Details:
-First Class -> 24
-Cargo -> 120
+Before Sorting:
 Sleeper -> 72
 AC Chair -> 56
+First Class -> 24
+General -> 90
 
-UC6 bogie-capacity mapping completed...
+After Sorting by Capacity:
+First Class -> 24
+AC Chair -> 56
+Sleeper -> 72
+General -> 90
+
+UC7 sorting completed...
 ```
