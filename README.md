@@ -1,21 +1,21 @@
-# UC16: Sort Passenger Bogies by Capacity (Bubble Sort)
+# UC17: Sort Bogie Names Using Arrays.sort()
 
-**Purpose:** Sort passenger bogie capacities using a basic Bubble Sort algorithm instead of library methods.
+**Purpose:** Sort bogie type names alphabetically using Java’s built-in Arrays.sort() method.
 
 **Input:**
-- Original Capacities: `{72, 56, 24, 70, 60}`
+- Original Bogie Names: `{"Sleeper", "AC Chair", "First Class", "General", "Luxury"}`
 
 **Output:**
 ```
 ============================================================================
- UC16 - Manual Sorting using Bubble Sort 
+ UC17 - Sort Bogie Names Using Arrays.sort()
 ============================================================================
 
-Original Capacities:
-72 56 24 70 60 
+Original Bogie Names:
+[Sleeper, AC Chair, First Class, General, Luxury]
 
-Sorted Capacities (Ascending):
-24 56 60 70 72 
+Sorted Bogie Names (Alphabetical):
+[AC Chair, First Class, General, Luxury, Sleeper]
 
-UC16 sorting completed...
+UC17 sorting completed...
 ```
