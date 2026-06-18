@@ -1,19 +1,22 @@
-# UC14: Handle Invalid Bogie Capacity (Custom Exception)
+# UC15: Safe Cargo Assignment Using try-catch-finally
 
-**Purpose:** Prevent invalid passenger bogies from being added to the train by enforcing capacity rules using a custom exception.
+**Purpose:** Safely handle unsafe cargo assignments without crashing the Train Consist Management App using runtime exceptions.
 
 **Input:**
-- Valid Bogie: "Sleeper" (72)
-- Invalid Bogie: "AC Chair" (-10)
+- Try to assign "Petroleum" to a "Cylindrical" bogie (Safe).
+- Try to assign "Petroleum" to a "Rectangular" bogie (Unsafe).
 
 **Output:**
 ```
 ============================================================================
- UC14 - Handle Invalid Bogie Capacity 
+ UC15 - Safe Cargo Assignment 
 ============================================================================
 
-Created Bogie: Sleeper -> 72
-Error: Capacity must be greater than zero
+Cargo assigned successfully -> Petroleum
+Cargo validation completed for Cylindrical bogie
 
-UC14 exception handling completed...
+Error: Unsafe cargo assignment!
+Cargo validation completed for Rectangular bogie
+
+UC15 runtime handling completed...
 ```
