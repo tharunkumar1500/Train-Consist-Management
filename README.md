@@ -1,26 +1,17 @@
-# UC19: Binary Search for Bogie ID (Optimized Searching)
+# UC20: Exception Handling During Search Operations
 
-**Purpose:** Find a bogie ID efficiently using binary search on sorted data.
+**Purpose:** Prevent searching an empty train by throwing an exception early.
 
 **Input:**
-- Bogie IDs: `{"BG101", "BG205", "BG309", "BG412", "BG550"}`
-- Search Key: `"BG309"`
+- Empty Bogie Array: `{}`
+- Search Key: `"BG101"`
 
 **Output:**
 ```
 ============================================================================
- UC19 - Binary Search for Bogie ID 
+ UC20 - Exception Handling During Search 
 ============================================================================
 
-Sorted Bogie IDs:
-BG101
-BG205
-BG309
-BG412
-BG550
-
-
-Bogie BG309 found using Binary Search.
-
-UC19 search completed...
+Exception in thread "main" java.lang.IllegalStateException: No bogies available in train. Cannot perform search.
+	at train.UseCase20TrainConsistMgmnt.main(UseCase20TrainConsistMgmnt.java:41)
 ```
