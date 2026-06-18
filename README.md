@@ -1,6 +1,6 @@
-# UC18: Linear Search for Bogie ID (Array-Based Searching)
+# UC19: Binary Search for Bogie ID (Optimized Searching)
 
-**Purpose:** Search and identify a specific bogie ID from an unsorted list using Linear Search algorithm.
+**Purpose:** Find a bogie ID efficiently using binary search on sorted data.
 
 **Input:**
 - Bogie IDs: `{"BG101", "BG205", "BG309", "BG412", "BG550"}`
@@ -9,10 +9,10 @@
 **Output:**
 ```
 ============================================================================
- UC18 - Linear Search for Bogie ID 
+ UC19 - Binary Search for Bogie ID 
 ============================================================================
 
-Available Bogie IDs:
+Sorted Bogie IDs:
 BG101
 BG205
 BG309
@@ -20,7 +20,7 @@ BG412
 BG550
 
 
-Bogie BG309 found in train consist.
+Bogie BG309 found using Binary Search.
 
-UC18 search completed...
+UC19 search completed...
 ```
