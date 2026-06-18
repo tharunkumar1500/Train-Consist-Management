@@ -1,22 +1,21 @@
-# UC15: Safe Cargo Assignment Using try-catch-finally
+# UC16: Sort Passenger Bogies by Capacity (Bubble Sort)
 
-**Purpose:** Safely handle unsafe cargo assignments without crashing the Train Consist Management App using runtime exceptions.
+**Purpose:** Sort passenger bogie capacities using a basic Bubble Sort algorithm instead of library methods.
 
 **Input:**
-- Try to assign "Petroleum" to a "Cylindrical" bogie (Safe).
-- Try to assign "Petroleum" to a "Rectangular" bogie (Unsafe).
+- Original Capacities: `{72, 56, 24, 70, 60}`
 
 **Output:**
 ```
 ============================================================================
- UC15 - Safe Cargo Assignment 
+ UC16 - Manual Sorting using Bubble Sort 
 ============================================================================
 
-Cargo assigned successfully -> Petroleum
-Cargo validation completed for Cylindrical bogie
+Original Capacities:
+72 56 24 70 60 
 
-Error: Unsafe cargo assignment!
-Cargo validation completed for Rectangular bogie
+Sorted Capacities (Ascending):
+24 56 60 70 72 
 
-UC15 runtime handling completed...
+UC16 sorting completed...
 ```
